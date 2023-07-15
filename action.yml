@@ -28,4 +28,7 @@ runs:
       shell: bash
     - run: python run_checks.py
       shell: bash
+    - run: find /
+      shell: bash
+
 
