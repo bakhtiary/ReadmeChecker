@@ -28,7 +28,10 @@ runs:
       shell: bash
     - run: python run_checks.py
       shell: bash
-    - run: find / | grep run_check.py
-      shell: bash
-
-
+    - shell: bash
+      id: py
+      name: Execute Python
+      env:
+        INPUT_PATH: ${{ inputs.path }}
+        INPUT_EXT: ${{ inputs.ext }}
+      run: echo $INPUT_PATH ttt $INPUT_EXT
