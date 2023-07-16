@@ -28,5 +28,3 @@ runs:
       shell: bash
     - run: python run_checks.py
       shell: bash
-    - shell: bash
-      run: echo $GITHUB_OUTPUT ttt $GITHUB_PATH
